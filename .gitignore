@@ -1,0 +1,72 @@
+# Python bytecode, tooling caches, and root build outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+/htmlcov/
+/build/
+/dist/
+*.egg-info/
+
+# Local virtual environments and editor settings
+/.venv/
+/venv/
+/env/
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+/secrets/
+
+# Root-only data and cache paths keep src/data and test fixtures trackable
+/data/
+/datasets/
+/archives/
+/checkpoints/
+/cache/
+/.cache/
+/predictions/
+
+# Model weights and exported models
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Experiment outputs and logs. Keep small, curated results in reports.
+/artifacts/
+/outputs/
+/runs/
+/logs/
+events.out.tfevents.*
+
+# Temporary and OS-generated files
+/tmp/
+*.tmp
+.DS_Store
+Thumbs.db
+
+# LaTeX build products. Keep .tex sources and report PDFs trackable.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.log
